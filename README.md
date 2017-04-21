@@ -13,7 +13,7 @@ This small device can be used to perform tasks that are boring, repetitive or to
 
 ## Getting Started
 
-You can build your own PassType frrom scratch, buy the pc, the already smd soldered pcb or the full device from us directly.
+You can build your own PassType frrom scratch, buy the pcb, the already smd soldered pcb or the full device from us directly.
 Contact us at davidex720@gmail.com for pcbs and full devices. All files needed are in this repo
 
 
