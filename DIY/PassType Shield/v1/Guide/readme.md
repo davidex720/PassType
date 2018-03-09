@@ -1,6 +1,6 @@
 
 
-Step by step guide
+#Step by step guide building DIY PassType Shield
 
 
 1. Solder the 24LC256 to the PassType Shield pcb. Choose only one of the two sockets (smd or arduino pin compatible package)
@@ -12,7 +12,7 @@ Step by step guide
 4. Solder the Arduino Pro Micro as flush as you can with the pcb using pins and trim them
   4.1 If you have an Arduino Pro Micro with J1 open solder the jumper close (see image) 
 
-5. Solder two small wires as in the picture, they will provide data output to the USB connector integrated on PassType Shield
+5. Solder two small wires as in the picture, they will provide data output to the USB connector integrated on PassType Shield **BE SUPER CAREFUL ABOUT THE SOLDERING ON ARDUINO PRO MICRO! IF YOU HEAT TOO MUCH THE BOARD OR MAKE THE WRONG SOLDERING YOU CAN DAMAG YOUR ARDUINO!**
 
 6. Solder the 5-way switch (the mini joystick)
 
