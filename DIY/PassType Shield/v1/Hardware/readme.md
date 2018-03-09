@@ -5,9 +5,9 @@ This list is made for GLOBAL shipping
 
 
 #### 1. PassType Shield PCB  
-   - 5$ sending a mail to davidex720@gmail.com 
-    the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project
-    Soon on www.passtype.it
+   - 5$ sending an email to davidex720@gmail.com 
+   - the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project
+   - Soon on www.passtype.it
 
 
 
@@ -22,18 +22,18 @@ This list is made for GLOBAL shipping
    
      
 #### 4. 5-way tactile switch
-   [Source 1](https://www.aliexpress.com/item/5-Channel-Way-Tactile-Switch-Breakout-Module-Converter-Adapter-Board-for-Arduino/32669811425.html?spm=2114.search0104.3.1.119365c2bf0rou&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=3273e035-9a04-4fd0-adfe-733925e676be-0&algo_pvid=3273e035-9a04-4fd0-adfe-733925e676be&priceBeautifyAB=0)  (to desolder) 
-   [Source 2](https://www.aliexpress.com/item/free-shipping-10-pcs-7mm-x-7mm-6-Pin-5-Way-Momentary-Pushbutton-PCB-SMD-SMT/32416530444.html?spm=2114.search0104.3.14.119365c2bf0rou&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=3273e035-9a04-4fd0-adfe-733925e676be-2&algo_pvid=3273e035-9a04-4fd0-adfe-733925e676be&priceBeautifyAB=0)
+   - [Source 1](https://www.aliexpress.com/item/5-Channel-Way-Tactile-Switch-Breakout-Module-Converter-Adapter-Board-for-Arduino/32669811425.html?spm=2114.search0104.3.1.119365c2bf0rou&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=3273e035-9a04-4fd0-adfe-733925e676be-0&algo_pvid=3273e035-9a04-4fd0-adfe-733925e676be&priceBeautifyAB=0)  (to desolder) 
+   - [Source 2](https://www.aliexpress.com/item/free-shipping-10-pcs-7mm-x-7mm-6-Pin-5-Way-Momentary-Pushbutton-PCB-SMD-SMT/32416530444.html?spm=2114.search0104.3.14.119365c2bf0rou&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=3273e035-9a04-4fd0-adfe-733925e676be-2&algo_pvid=3273e035-9a04-4fd0-adfe-733925e676be&priceBeautifyAB=0)
 
 
 #### 5. EEPROM 24lc256
-   Best solution is to ask for free samples and free shipping [here](http://www.microchip.com/wwwproducts/en/24lc256)
-   Or you can buy it [here](https://www.digikey.com/product-detail/en/microchip-technology/24LC256T-I-SM/24LC256T-I-SMCT-ND/5013518)
+   - Best solution is to ask for free samples and free shipping [here](http://www.microchip.com/wwwproducts/en/24lc256)
+   - Or you can buy it [here](https://www.digikey.com/product-detail/en/microchip-technology/24LC256T-I-SM/24LC256T-I-SMCT-ND/5013518)
   
   
 #### 6. USB male connector
-   [Source 1](https://www.aliexpress.com/item/50Pcs-lot-USB-2-0-Male-A-Type-USB-PCB-Connector-Plug-180-degree-SMT-SMD/32707919597.html?spm=2114.search0104.3.23.18b8583fKyyTd1&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=a10d68d0-b656-4def-88e3-eda41a465fa2-3&algo_pvid=a10d68d0-b656-4def-88e3-eda41a465fa2&priceBeautifyAB=0)
-   [Source 2](https://www.aliexpress.com/item/82Pcs-14-Styles-USB-Male-USB-Female-Mini-USB-SMD-Vertical-Socket-Connector-for-DIY-Jack/32821827485.html?spm=2114.search0104.3.57.18b8583fKyyTd1&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=a10d68d0-b656-4def-88e3-eda41a465fa2-8&algo_pvid=a10d68d0-b656-4def-88e3-eda41a465fa2&priceBeautifyAB=0)
+   - [Source 1](https://www.aliexpress.com/item/50Pcs-lot-USB-2-0-Male-A-Type-USB-PCB-Connector-Plug-180-degree-SMT-SMD/32707919597.html?spm=2114.search0104.3.23.18b8583fKyyTd1&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=a10d68d0-b656-4def-88e3-eda41a465fa2-3&algo_pvid=a10d68d0-b656-4def-88e3-eda41a465fa2&priceBeautifyAB=0)
+   - [Source 2](https://www.aliexpress.com/item/82Pcs-14-Styles-USB-Male-USB-Female-Mini-USB-SMD-Vertical-Socket-Connector-for-DIY-Jack/32821827485.html?spm=2114.search0104.3.57.18b8583fKyyTd1&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=a10d68d0-b656-4def-88e3-eda41a465fa2-8&algo_pvid=a10d68d0-b656-4def-88e3-eda41a465fa2&priceBeautifyAB=0)
    
    
    
