@@ -6,9 +6,9 @@ This list is made for GLOBAL shipping
 
 ### 1. PassType Shield PCB
    
-   ⋅⋅⋅5$ sending a mail to davidex720@gmail.com 
-   ⋅⋅⋅the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project
-   ⋅⋅⋅Soon on www.passtype.it
+   ⋅⋅⋅5$ sending a mail to davidex720@gmail.com⋅⋅ 
+   ⋅⋅⋅the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project⋅⋅
+   ⋅⋅⋅Soon on www.passtype.it⋅⋅
 
 
 
