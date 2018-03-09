@@ -1,6 +1,6 @@
 # PassType
 
-#### A COMMERCIAL, UPGRADED AND "READY TO USE" VERSION IS COMING SOON!! READ MORE [HERE](https://www.google.it/search?q=Paralympics+2018&oi=ddle&ct=paralympics-2018-4676703698812928&hl=en&kgmid=/m/0gjb9ds&source=doodle-ntp)
+#### A COMMERCIAL, UPGRADED AND "READY TO USE" VERSION IS COMING SOON!! READ MORE [HERE](PassType CommercialProduct/readme.txt)
 
 PassType is small and versatile USB HID device: name something you do with keyboard and mouse on your computer and PassType can do it for you faster, better and a million times over!
 
