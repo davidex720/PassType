@@ -18,7 +18,7 @@ __The new version will be even more flexible, have a better storing system, encr
 You can build your own PassType from scratch, buy the pcb, the already smd soldered pcb or the full device from us directly.
 Contact us at davidex720@gmail.com for pcbs and full devices. All files needed are in this repo (still to be updated)
 
-__WEBSITE WILL ARRIVE SOON!__
+__WEBSITE COMING SOON!__
 
 
 
