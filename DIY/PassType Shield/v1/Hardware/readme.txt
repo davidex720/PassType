@@ -1,4 +1,4 @@
-## This is the parts list for PassType Shield V1
+# This is the parts list for PassType Shield V1
 Links here are only for reference, feel free to buy parts from the cheapest alternative in your country.
 This list is made for GLOBAL shipping
 
