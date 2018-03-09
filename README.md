@@ -1,6 +1,6 @@
 # PassType
 
-__NEW AND UPGRADED VERSION SOON RELEASED!!__
+__NEW AND UPGRADED VERSION COMING SOON!!__
 
 PassType is small and versatile USB HID device: name something you do with keyboard and mouse on your computer and PassType can do it for you faster, better and a million times over!
 
