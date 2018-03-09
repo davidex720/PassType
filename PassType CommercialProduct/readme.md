@@ -1,14 +1,16 @@
 # COMING SOON!
 
 ## Feauters:
+
   - More power
   - Cool Design
-  - Integrated safety measures to safely store passwords
+  - Integrated safety measures to securely store passwords
   - Smaller size
   - Expandable memory
   - New learning tools
   - More compatibility
   - Professional tool easy to customize
-  - Open platform for developer
-
+  - Open to developer
+  
+  
 www.passtype.it
