@@ -6,15 +6,15 @@ This list is made for GLOBAL shipping
 
 ### 1. PassType Shield PCB
    
-   ⋅⋅⋅5$ sending a mail to davidex720@gmail.com⋅⋅ 
-   ⋅⋅⋅the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project⋅⋅
-   ⋅⋅⋅Soon on www.passtype.it⋅⋅
+   5$ sending a mail to davidex720@gmail.com 
+   the funds rised with PassType Shield pcb will be used for the development of the upgraded, safer, commercial, "ready to use" version of this project
+   Soon on www.passtype.it
 
 
 
 ### 2. Arduino Pro Micro 5V
 
-   ⋅⋅⋅[Source 1](https://www.aliexpress.com/item/Free-Shipping-New-Pro-Micro-for-arduino-ATmega32U4-5V-16MHz-Module-with-2-row-pin-header/2021979132.html?spm=2114.search0104.3.2.42481986pje8zz&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=4f3b485b-808f-46f2-a339-12398b33a269-0&algo_pvid=4f3b485b-808f-46f2-a339-12398b33a269&priceBeautifyAB=0)
+   ⋅⋅⋅ [Source 1](https://www.aliexpress.com/item/Free-Shipping-New-Pro-Micro-for-arduino-ATmega32U4-5V-16MHz-Module-with-2-row-pin-header/2021979132.html?spm=2114.search0104.3.2.42481986pje8zz&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=4f3b485b-808f-46f2-a339-12398b33a269-0&algo_pvid=4f3b485b-808f-46f2-a339-12398b33a269&priceBeautifyAB=0)
    ⋅⋅⋅[Source 2](https://www.aliexpress.com/item/1pcs-TENSTAR-ROBOT-With-the-bootloader-Black-Pro-Micro-ATmega32U4-for-arduino-5V-16MHz-Module-controller/32849563958.html?spm=2114.search0104.3.16.42481986pje8zz&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10325_10343_10546_10340_10548_10341_10084_10083_10618_10304_10307_5711211_10313_10059_10184_10534_100031_10103_10627_10626_10624_10623_10622_5722411_10621_10620_5711311,searchweb201603_25,ppcSwitch_3&algo_expid=4f3b485b-808f-46f2-a339-12398b33a269-2&algo_pvid=4f3b485b-808f-46f2-a339-12398b33a269&priceBeautifyAB=0)
    
    
