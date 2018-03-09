@@ -10,12 +10,14 @@ Often I need to log in to my mail accounts or to log in to my University profile
 
 ## A versatile set of tools for noobs and pros
 
-This small device can be used to perform tasks that are boring, repetitive or to type in hundreds of characters in few seconds. Actually it can do everything that a human in 15 minutes can do with mouse and keyboard in only few seconds. The first version of PassType is now called PassType Shield. The name comes from the fact that it is almost a shield for Arduino Pro Micro. __The new version will be even more flexible, have a better storing system, encryption of datas and a lot of new features in a even smaller form factor!__
+This small device can be used to perform tasks that are boring, repetitive or to type in hundreds of characters in few seconds. Actually it can do everything that a human in 15 minutes can do with mouse and keyboard in only few seconds. The first version of PassType is now called PassType Shield. The name comes from the fact that it is almost a shield for Arduino Pro Micro.
+__The new version will be even more flexible, have a better storing system, encryption of datas and a lot of new features in a even smaller form factor!__
 
 ## Getting Started
 
 You can build your own PassType from scratch, buy the pcb, the already smd soldered pcb or the full device from us directly.
 Contact us at davidex720@gmail.com for pcbs and full devices. All files needed are in this repo (still to be updated)
+
 __WEBSITE WILL ARRIVE SOON!__
 
 
@@ -26,7 +28,7 @@ __WEBSITE WILL ARRIVE SOON!__
 
 ## Authors
 
-* **Davide Nesi** - **
-* **Eero Prittinen** - **
+* **Davide Nesi** - *Dev*
+* **Eero Prittinen** - *Dev*
 
 
