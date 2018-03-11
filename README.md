@@ -2,11 +2,11 @@
 
 #### A COMMERCIAL, UPGRADED AND "READY TO USE" VERSION IS COMING SOON!! READ MORE [HERE](https://github.com/davidex720/PassType/tree/master/PassType%20CommercialProduct)
 
-PassType is small and versatile USB HID device: name something you do with keyboard and mouse on your computer and PassType can do it for you faster, better and a million times over!
+PassType is small and versatile USB HID device: name something you can do with keyboard and mouse on your computer and PassType can do it for you faster, better and a million times over!
 
 ## The idea
 
-Quite often you are requested to log in to accounts from a pc that is not yours or from a device you don't fully trust. You can use the same password but it is a very bad practice with awfull consequences... you should use 10 characters or more passwords with numbers, symbols, upper and lower case letters in it and possibly change them once in a while. A nightmare to remember and even worse to type in right at first try. Sometimes one of my relatives have problems remembering a password, such as wifi or similar stuff. PassType (yeah... this name comes from the contraction of "password type in device") is a very cheap and simple to use automation device, capable of storing password and macros and to type/execute them in every device! It works with every computer and it can even be plugged and used on smartphones. Every system supporting some sort of keyboard and/or mouse is compatible with PassType!
+Quite often you are requested to log in to accounts from a pc that is not yours, from a device you don't fully trust or to do repetitive tasks. You can use the always same password but it is a very bad practice with awfull consequences... you should use 10 characters or more passwords with numbers, symbols, upper and lower case letters in it and possibly change them once in a while. A nightmare to remember and even worse to type in right at first try. Sometimes one of my relatives have problems remembering a password, such as wifi or similar stuff. PassType (yeah... this name comes from the contraction of "password type in device") is a very cheap and simple to use automation device, capable of storing password and macros and to type/execute them in every device! It works with every computer and it can even be plugged and used on smartphones. Every system supporting some sort of keyboard and/or mouse is compatible with PassType!
 
 ## A versatile set of tools for newbies and pros
 
