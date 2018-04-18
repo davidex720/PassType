@@ -1045,9 +1045,9 @@ void drawActions(void) {
     u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else if (statusMenu == 12) {                                                //editing psw length
     //TODO in the center?
+    u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
-    u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawStr( 17, 26, "_");
     u8g2.drawStr( 25, 26, "_");
     u8g2.drawBitmap( 22 , 0, 1, 3, upArrow);
