@@ -38,7 +38,7 @@ U8G2_SSD1306_128X32_UNIVISION_F_HW_I2C u8g2(U8G2_R0, SCL, SDA, U8X8_PIN_NONE);
 
 //Settings
 #define firstUse 32501              //255 first use
-#define pswLength 32502             //5,6,7,8,9,10,11,12,13,14,15,16  ---------default 8 value 255
+#define pswLength 32502             //5,6,7,8,9,10,11,12,13,14,15,16  ---------default 10 value 255
 #define pswType  32503              //1 only lowercase, 2 lower+upper case, 3 letters+numbers, 4 letters+numbers+symbols -------255 default letters+numbers
 
 //JOYSTICK
@@ -75,12 +75,12 @@ const u8g2_uint_t leftArrow[]  = {
 };
 const u8g2_uint_t rigthArrow[]  = {
   0x00,          // 00000000
-  0x04,          // 00000100
-  0x06,          // 00000110
-  0x07,          // 00000111
-  0x07,          // 00000111
-  0x06,          // 00000110
-  0x04,          // 00000100
+  0x80,          // 10000000
+  0xC0,          // 11000000
+  0xE0,          // 11100000
+  0xE0,          // 11100000
+  0xC0,          // 11000000
+  0x80,          // 10000000
   0x00,          // 00000000
 };
 const u8g2_uint_t downArrow[]  = {
@@ -285,6 +285,7 @@ String addName;
 int charInName = 0;
 int charIndex = 0;
 int wait = 5;
+int fUse = 255;
 
 
 char consentiti[] = {
@@ -316,6 +317,14 @@ void setup(void) {
   Keyboard.begin();
   randomSeed(analogRead(0));
 
+  fUse = (int) readEEPROM(firstUse);
+  if (fUse == 255) {
+    //TODO first use
+    //TODO set to firs use done
+  } else {
+    //animation
+  }
+
 }
 
 void loop(void) {
@@ -329,14 +338,6 @@ void loop(void) {
   } else {
     delay(1000);
     wait = 0;
-  }
-
-  int fUse = (int) readEEPROM(firstUse);
-  if (fUse == 255) {
-    //TODO first use
-    //TODO set to firs use done
-  } else {
-    //animation
   }
 
   String n;
@@ -608,7 +609,7 @@ void loop(void) {
           statusMenu = 0;
           wait = 1;
         } else {
-          //TODO messaggio nome non valido perchè composto da 0 char
+          //TODO not valid message
         }
       } else {
         addName = addName + consentiti[charIndex];
@@ -707,7 +708,7 @@ void loop(void) {
 
   } else if (statusMenu == 12) {    //---------------------------------------------- editing the PSW length
     if (buttonState == 0) {
-      //nessun bottone
+      //nothing
     } else if (buttonState == 1) { //left
       statusMenu = 10;
       text = "Psw length";
@@ -738,7 +739,7 @@ void loop(void) {
 
   } else if (statusMenu == 13) {                                           //psw alphabetic
     if (buttonState == 0) {
-      //nessun bottone
+      //nothing
     } else if (buttonState == 1) { //left
       statusMenu = 11;
       text = "Psw type";
@@ -762,7 +763,7 @@ void loop(void) {
 
   } else if (statusMenu == 14) {                                           //psw aLpHabeTic   P1KCYX2sL9CbIi26Li
     if (buttonState == 0) {
-      //nessun bottone
+      //nothing
     } else if (buttonState == 1) { //left
       statusMenu = 11;
       text = "Psw type";
@@ -788,7 +789,7 @@ void loop(void) {
 
   } else if (statusMenu == 15) {                                           //psw AlpH4num3ric
     if (buttonState == 0) {
-      //nessun bottone
+      //nothing
     } else if (buttonState == 1) { //left
       statusMenu = 11;
       text = "Psw type";
@@ -814,7 +815,7 @@ void loop(void) {
 
   } else if (statusMenu == 16) {                                           //psw alphanumeric+
     if (buttonState == 0) {
-      //nessun bottone
+      //nothing
     } else if (buttonState == 1) { //left
       statusMenu = 11;
       text = "Psw type";
@@ -952,59 +953,56 @@ void drawActions(void) {
 
   //u8g2.drawBitmap( 90, 25, 1, 6, center);
 
-  //TODO forse conviene avere 5-6 variabili booleane.....
-
-
   if (statusMenu <= 1) {                                                     //PSW mostrate
     if (pointedAddr != 0) {
       u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
     }
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalTYPE);
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 2) {                                             //New psw
     if (pointedAddr != 0) {
       u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
     }
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
+
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
-    u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
+    u8g2.drawBitmap( 60, 29, 1, 3, downArrow); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 3) {                                            // settings
     u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
-    u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
+    u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 4) {                                              //edit name
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
+    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 5) {                                              //edit val
     u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
+    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 6) {                                              //delete psw
     u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
+    u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 7) {                                              //insert name
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else if (statusMenu == 8) {                                                //inserting name
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
-    //TODO sistemare le distanze per char lunghi (ad esempio la 'm')
+    //TODO review distances    
     int i = 0;
     for (i = 0; i <= charInName; i++) {
       u8g2.drawStr( 17 + (i * spacing), 26, "_");
@@ -1015,13 +1013,12 @@ void drawActions(void) {
     String s = String(consentiti[charIndex]);
     //u8g2.drawStr( 17 + (i * spacing), 27, s);
     drawTxtAt(17 + (i * spacing), s);
-    drawTxt(addName);
+    drawTxt(addName); u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else if (statusMenu == 9) {                                                //editing name
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
-    //TODO sistemare le distanze per char lunghi (ad esempio la 'm')
+    //TODO review distances
     int i = 0;
     for (i = 0; i <= charInName; i++) {
       u8g2.drawStr( 17 + (i * spacing), 26, "_");
@@ -1032,68 +1029,68 @@ void drawActions(void) {
     String s = String(consentiti[charIndex]);
     //u8g2.drawStr( 17 + (i * spacing), 27, s);
     drawTxtAt(17 + (i * spacing), s);
-    drawTxt(addName);
+    drawTxt(addName); u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 10) {                                              //psw length
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 11) {                                              //psw type
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
     u8g2.drawBitmap( 119, 4, 1, 23, verticalEDIT);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else if (statusMenu == 12) {                                                //editing psw length
-    //TODO forse meglio spostare al centro
+    //TODO in the center?
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawStr( 17, 26, "_");
     u8g2.drawStr( 25, 26, "_");
     u8g2.drawBitmap( 22 , 0, 1, 3, upArrow);
     u8g2.drawBitmap( 22 , 29, 1, 3, downArrow);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
     drawTxt(String(charIndex));
   } else  if (statusMenu == 13) {                                              //alphabetic
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 14) {                                              //aLpHabeTic
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
-    u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
+    u8g2.drawBitmap( 60, 0, 1, 3, upArrow); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 15) {                                              //aLpHanum3ric
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 60, 29, 1, 3, downArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
-    u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
+    u8g2.drawBitmap( 60, 0, 1, 3, upArrow); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 16) {                                              //Alphanumeric+
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
     u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 17) {                                              //erase all?
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
-    u8g2.drawBitmap( 60, 0, 1, 3, upArrow);
+    u8g2.drawBitmap( 60, 0, 1, 3, upArrow); 
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   } else  if (statusMenu == 18) {                                              //sure?
-    u8g2.drawBitmap( 120, 12, 1, 8, rigthArrow);
     u8g2.drawBitmap( 0, 12, 1, 8, leftArrow);
     u8g2.drawBitmap( 4, 4, 1, 23, verticalBACK);
     u8g2.drawBitmap( 119, 11, 1, 12, verticalOK);
+    u8g2.drawBitmap( 125, 12, 1, 8, rigthArrow);
   }
 
 
@@ -1278,7 +1275,6 @@ boolean autoWritePSW(String id , String psw) {                                  
 }
 
 boolean autoReadPSW(unsigned int eeaddress, String *nam, String *val, boolean forward) {                     //AUTO READ AT ADDRESS PSW
-  //viene passato un indirizzo che contiene un puntatore da usare per prendere la PSW
 
   if (forward) {
     for (int i = eeaddress; i < settingStartAddress; i++) {
@@ -1321,9 +1317,7 @@ boolean autoReadPSW(unsigned int eeaddress, String *nam, String *val, boolean fo
 }
 
 
-//TODO non scorro in avanti leggo solo dove mi viene indicato
 boolean simpleAutoReadPSW(unsigned int eeaddress, String *nam, String *val) {                     //SIMPLE -----------------------_AUTO READ AT ADDRESS PSW
-  //viene passato un indirizzo che contiene un puntatore da usare per prendere la PSW
 
   int addrVal = (int) readEEPROM(eeaddress);
   if ( addrVal != byteResetValue) {
@@ -1349,9 +1343,6 @@ boolean recreatePSW(unsigned int eeaddress) {                                   
     pswAddr++;
   }
   pswAddr++;
-  //genero PSW
-  //scrivo da pswAddr in poi
-  //aggiungo 3
   String t = "";
   t = rndPSWgen();
   int i = 0;
@@ -1444,5 +1435,4 @@ int debounceButtons() {
     buttonState = tm;
   }
 }
-
 
